@@ -1,10 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using OnlineTickets.Data;
+using OnlineTickets.Data.Base;
 
 namespace OnlineTickets.Models;
 
-public class Movie
+public class Movie : IEntityBase
 {
     [Key]
     public int Id { get; set; }
